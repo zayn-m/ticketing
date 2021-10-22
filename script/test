@@ -1,0 +1,2 @@
+#!/bin/sh
+./node_modules/.bin/mocha 'tests/mocha/*.test.js' 'tests/mocha/*/*.test.js' --timeout 50000
