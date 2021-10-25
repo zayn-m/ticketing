@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "test": "nyc mocha --exit 'tests/mocha/*.test.js' 'tests/mocha/*/*.test.js' --timeout 50000"
+    "test": "mocha --exit 'tests/mocha/*.test.js' 'tests/mocha/*/*.test.js' --timeout 50000",
+    "coverage": "nyc mocha --exit 'tests/mocha/*.test.js' 'tests/mocha/*/*.test.js' --timeout 50000"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
