@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ssh ubuntu@ip-172-31-89-62 <<EOF
+ cd /var/www/ticketing
+ git pull
+ npm install
+ pm2 restart all
+ exit
+EOF
