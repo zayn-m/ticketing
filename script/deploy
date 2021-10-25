@@ -2,7 +2,8 @@
 
 ssh ubuntu@ip-172-31-89-62 <<EOF
  cd /var/www/ticketing
- git pull
+ sudo git reset --hard HEAD
+ sudo git pull
  npm install
  pm2 restart all
  exit
