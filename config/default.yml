@@ -1,0 +1,10 @@
+server:
+  port: 5000
+
+db:
+  type: 'mongo'
+  port: 27017
+  database: 'ticketing'
+
+jwt:
+  expiresIn: 3600
