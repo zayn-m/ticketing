@@ -1,0 +1,6 @@
+db:
+  host: 'localhost'
+  uri: 'mongodb://localhost:27017/ticketing'
+
+jwt:
+  secret: 'sdjash281023123188'

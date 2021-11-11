@@ -1,2 +1,0 @@
-#!/bin/sh
-./node_modules/.bin/mocha --exit 'tests/mocha/*.test.js' 'tests/mocha/*/*.test.js' --timeout 50000
