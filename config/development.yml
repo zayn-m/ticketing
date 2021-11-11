@@ -1,6 +1,7 @@
 db:
   host: 'localhost'
   uri: 'mongodb://localhost:27017/ticketing'
+  test_uri: 'mongodb://localhost:27017/ticketing-test'
 
 jwt:
   secret: 'sdjash281023123188'
