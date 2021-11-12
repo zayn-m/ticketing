@@ -6,6 +6,7 @@ pipeline {
     environment {
         MONGODB_ENV_URI=''
         NODE_ENV='test'
+        SESSION_SECRET='topSecret'
     }
       stages {
           stage('build') {
