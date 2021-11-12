@@ -3,6 +3,10 @@ pipeline {
     triggers {
         githubPush()
     }
+    environment {
+        MONGODB_ENV_URI=''
+        NODE_ENV='test'
+    }
       stages {
           stage('build') {
               steps {

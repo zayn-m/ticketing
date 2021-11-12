@@ -17,7 +17,9 @@ const app = express();
 app.use(passport.initialize());
 require('./config/passport')(passport);
 
-connectDb();
+if (process.env.NODE_ENV !== 'test') {
+  connectDb();
+}
 
 // Enable cors
 app.use(cors());
