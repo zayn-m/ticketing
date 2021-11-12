@@ -6,25 +6,25 @@ pipeline {
       stages {
           stage('build') {
               steps {
-                  echo 'building the software'
+                  echo 'Starting build and installing packages'
                   sh 'npm install'
               }
           }
           stage('test') {
               steps {
-                  echo 'testing the software'
+                  echo 'Running tests'
                   sh 'npm test'
               }
           }
           stage('coverage') {
               steps {
-                  echo 'checking the code coverage'
+                  echo 'Checking the code coverage'
                   sh 'npm run coverage'
               }
           }
           stage('deploy') {
               steps {
-                  echo 'deploying the software to aws ec2'
+                  echo 'Deploying the software to aws ec2'
                   sh '''#!/bin/bash
                   ssh ubuntu@ip-172-31-89-62 <<EOF
                    cd /var/www/ticketing
